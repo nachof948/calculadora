@@ -1,6 +1,4 @@
-import { Boton } from './components/Boton'
-import { Pantalla } from './components/Pantalla'
-import { BotonClear } from './components/BotonClear'
+import { Boton, Pantalla, BotonClear } from './index'
 import './App.css'
 import { useState } from 'react'
 import { evaluate } from 'mathjs'
