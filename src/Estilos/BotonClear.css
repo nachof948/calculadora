@@ -10,5 +10,9 @@
     font-weight: 700;
     margin: 0.5rem;
     cursor: pointer;
+    transition: all 250ms;
     user-select: none;
+}
+.btn-clear:hover{
+    background-color: #253031;
 }

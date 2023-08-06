@@ -10,5 +10,12 @@
     font-weight: 700;
     margin: 0.5rem;
     cursor: pointer;
+    transition: all 250ms;
     user-select: none;
+}
+.boton:hover{
+    background-color: #0C6291;
+}
+.boton.operacion:hover{
+    background-color: #000004;
 }
