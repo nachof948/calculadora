@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Estilos/Boton.css'
-const Boton = (props) => {
+const Boton = ({ children, manejarClick }) => {
   
   const esOperador = (valor) =>{
     return isNaN(valor) && (valor !== '.') && (valor !== '=')
@@ -9,9 +9,9 @@ const Boton = (props) => {
   return(
     <>
       <div 
-      className={`boton ${esOperador(props.children) ? "operacion" : null}`} 
-      onClick={() => props.manejarClick(props.children)}>
-        {props.children}
+      className={`boton ${esOperador(children) ? "operacion" : null}`} 
+      onClick={() => manejarClick(children)}>
+        {children}
       </div>
     </>
   )
