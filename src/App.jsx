@@ -8,7 +8,12 @@ function App() {
   const [input, setInput] = useState('')
 
   const agregarValor = (valor) =>{
-    setInput(input + valor)
+    if((valor === '+' || valor === '-' || valor === '*' || valor === '/')
+    && (input.endsWith('+') || input.endsWith('-') || input.endsWith('*') || input.endsWith('/'))){
+      setInput(input.slice(0, -1) + valor)
+    } else{
+      setInput(input + valor)
+    }
   }
   
   const resultado = () =>{
